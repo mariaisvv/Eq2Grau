@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Eq2Grau";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Cálculo das raízes de uma equação do 2º Grau</h1>
 </div>
+
+<form>
+    Introduza, por favor, os coeficientes da Equação do 2º Grau <br />
+    a=<input type="text" /> <br /> @*text para ter numeros fracionarios, pq number não aceita numeros fracionarios*@
+    b=<input type="text" /> <br />
+    c=<input type="text" /> <br />
+
+    <input type="submit" value="Calcular" />
+</form>
+@*para colocar as variaveis de input dentro de uma caixa, precisamos de um objeto do tipo form*@
